@@ -13,6 +13,7 @@
 		EBDCA83D227A8BA100DA6A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDCA83C227A8BA100DA6A8D /* Assets.xcassets */; };
 		EBDCA840227A8BA100DA6A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDCA83E227A8BA100DA6A8D /* LaunchScreen.storyboard */; };
 		EBDCA848227AAA4E00DA6A8D /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = EBDCA847227AAA4E00DA6A8D /* question.csv */; };
+		EBDCA84A227AAC9200DA6A8D /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCA849227AAC9200DA6A8D /* QuestionDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EBDCA83F227A8BA100DA6A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBDCA841227A8BA200DA6A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBDCA847227AAA4E00DA6A8D /* question.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
+		EBDCA849227AAC9200DA6A8D /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				EBDCA835227A8BA000DA6A8D /* AppDelegate.swift */,
 				EBDCA837227A8BA000DA6A8D /* ViewController.swift */,
+				EBDCA849227AAC9200DA6A8D /* QuestionDataManager.swift */,
 				EBDCA839227A8BA000DA6A8D /* Main.storyboard */,
 				EBDCA847227AAA4E00DA6A8D /* question.csv */,
 				EBDCA83C227A8BA100DA6A8D /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			files = (
 				EBDCA838227A8BA000DA6A8D /* ViewController.swift in Sources */,
 				EBDCA836227A8BA000DA6A8D /* AppDelegate.swift in Sources */,
+				EBDCA84A227AAC9200DA6A8D /* QuestionDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
