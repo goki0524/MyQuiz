@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YH3-KR-wkV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="r4d-LY-6hj">
             <objects>
-                <viewController id="YH3-KR-wkV" customClass="ViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YH3-KR-wkV" customClass="StartViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dzL-9B-CU0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="uJK-nw-HQI">
             <objects>
-                <viewController storyboardIdentifier="question" id="8Hs-vN-gWJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="8Hs-vN-gWJ" customClass="QuestionViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jA5-6t-QIQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,12 +72,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0h-FJ-h6W">
-                                <rect key="frame" x="32" y="52" width="24" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NdT-q7-f7D">
                                 <rect key="frame" x="16" y="208.5" width="343" height="438.5"/>
                                 <subviews>
@@ -88,6 +82,9 @@
                                         <state key="normal" title="恐竜の化石">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer1Button:" destination="8Hs-vN-gWJ" eventType="touchUpInside" id="RsU-wr-EYc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbp-h7-XVk">
                                         <rect key="frame" x="0.0" y="112" width="343" height="102.5"/>
@@ -96,6 +93,9 @@
                                         <state key="normal" title="スペースシャトル">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer2Button:" destination="8Hs-vN-gWJ" eventType="touchUpInside" id="USs-C9-Hk7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9I-rH-Myp">
                                         <rect key="frame" x="0.0" y="224.5" width="343" height="102"/>
@@ -104,6 +104,9 @@
                                         <state key="normal" title="タイムマシン">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer3Button:" destination="8Hs-vN-gWJ" eventType="touchUpInside" id="97T-Id-ABh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nM-po-6tX">
                                         <rect key="frame" x="0.0" y="336.5" width="343" height="102"/>
@@ -112,6 +115,9 @@
                                         <state key="normal" title="無人島">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer4Button:" destination="8Hs-vN-gWJ" eventType="touchUpInside" id="UBd-L1-E2X"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -121,6 +127,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="9dn-h3-Qzv">
                                 <rect key="frame" x="87" y="233" width="201" height="201"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0h-FJ-h6W">
+                                <rect key="frame" x="32" y="52" width="24" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -140,15 +152,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NIe-5I-5cS"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="oyP-j1-zXU" id="ysa-oX-E4F"/>
+                        <outlet property="answer2Button" destination="jbp-h7-XVk" id="xu8-NQ-NNW"/>
+                        <outlet property="answer3Button" destination="z9I-rH-Myp" id="bbl-XX-OeU"/>
+                        <outlet property="answer4Button" destination="3nM-po-6tX" id="V4Q-mF-u04"/>
+                        <outlet property="correctImageView" destination="CoR-a5-BrE" id="y8C-A8-rdI"/>
+                        <outlet property="incorrectImageView" destination="9dn-h3-Qzv" id="Cvi-FI-6ky"/>
+                        <outlet property="questionNoLabel" destination="C0h-FJ-h6W" id="bR8-R4-zjS"/>
+                        <outlet property="questionTextView" destination="T4e-MD-hWw" id="3gt-2V-MXe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmS-mf-v2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="941.60000000000002" y="131.78410794602701"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="Hgw-gA-rvV">
             <objects>
-                <viewController storyboardIdentifier="result" id="ZDG-ed-grs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="ZDG-ed-grs" customClass="ResultViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nNG-bh-VIX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +208,9 @@
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ckp-wz-0Z9" kind="unwind" unwindAction="goTitle:" id="SJ8-Xw-HIz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -199,8 +224,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wuZ-LI-dHj"/>
                     </view>
+                    <connections>
+                        <outlet property="correctPercentLabel" destination="CKR-rf-c21" id="frk-9u-I4K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PmH-DD-dND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ckp-wz-0Z9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1708" y="138.98050974512745"/>
         </scene>

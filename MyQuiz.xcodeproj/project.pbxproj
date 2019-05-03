@@ -14,6 +14,10 @@
 		EBDCA840227A8BA100DA6A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDCA83E227A8BA100DA6A8D /* LaunchScreen.storyboard */; };
 		EBDCA848227AAA4E00DA6A8D /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = EBDCA847227AAA4E00DA6A8D /* question.csv */; };
 		EBDCA84A227AAC9200DA6A8D /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCA849227AAC9200DA6A8D /* QuestionDataManager.swift */; };
+		EBDCA84C227BCEDC00DA6A8D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCA84B227BCEDC00DA6A8D /* StartViewController.swift */; };
+		EBDCA850227BD67E00DA6A8D /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCA84F227BD67E00DA6A8D /* QuestionViewController.swift */; };
+		EBDCA853227BD9FD00DA6A8D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDCA852227BD9FD00DA6A8D /* AudioToolbox.framework */; };
+		EBDCA855227BE96300DA6A8D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCA854227BE96300DA6A8D /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		EBDCA841227A8BA200DA6A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBDCA847227AAA4E00DA6A8D /* question.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
 		EBDCA849227AAC9200DA6A8D /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
+		EBDCA84B227BCEDC00DA6A8D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		EBDCA84F227BD67E00DA6A8D /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionViewController.swift; path = ../QuestionViewController.swift; sourceTree = "<group>"; };
+		EBDCA852227BD9FD00DA6A8D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EBDCA854227BE96300DA6A8D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBDCA853227BD9FD00DA6A8D /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			children = (
 				EBDCA834227A8BA000DA6A8D /* MyQuiz */,
 				EBDCA833227A8BA000DA6A8D /* Products */,
+				EBDCA851227BD9FD00DA6A8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +68,12 @@
 		EBDCA834227A8BA000DA6A8D /* MyQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				EBDCA84F227BD67E00DA6A8D /* QuestionViewController.swift */,
 				EBDCA835227A8BA000DA6A8D /* AppDelegate.swift */,
 				EBDCA837227A8BA000DA6A8D /* ViewController.swift */,
 				EBDCA849227AAC9200DA6A8D /* QuestionDataManager.swift */,
+				EBDCA84B227BCEDC00DA6A8D /* StartViewController.swift */,
+				EBDCA854227BE96300DA6A8D /* ResultViewController.swift */,
 				EBDCA839227A8BA000DA6A8D /* Main.storyboard */,
 				EBDCA847227AAA4E00DA6A8D /* question.csv */,
 				EBDCA83C227A8BA100DA6A8D /* Assets.xcassets */,
@@ -68,6 +81,14 @@
 				EBDCA841227A8BA200DA6A8D /* Info.plist */,
 			);
 			path = MyQuiz;
+			sourceTree = "<group>";
+		};
+		EBDCA851227BD9FD00DA6A8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCA852227BD9FD00DA6A8D /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBDCA838227A8BA000DA6A8D /* ViewController.swift in Sources */,
+				EBDCA850227BD67E00DA6A8D /* QuestionViewController.swift in Sources */,
+				EBDCA84C227BCEDC00DA6A8D /* StartViewController.swift in Sources */,
 				EBDCA836227A8BA000DA6A8D /* AppDelegate.swift in Sources */,
 				EBDCA84A227AAC9200DA6A8D /* QuestionDataManager.swift in Sources */,
+				EBDCA855227BE96300DA6A8D /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
